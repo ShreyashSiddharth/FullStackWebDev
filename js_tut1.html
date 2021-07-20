@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js tutorial</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <script>
+        console.log('Hello World');
+       
+        c = 38
+        console.log(c);
+        console.log("the value of a + b = " + (a+c));
+        c = -c;
+        console.log(c);
+        c = 2 + 4;
+        console.log(c);
+        var g  = 2;
+        var h = 4;
+        console.log("the value of g + h is " + (g+h));
+        console.log("the value of g - h is " + (g-h));
+        console.log("the value of g * h is " + (g*h));
+        console.log("the value of g / h is " + (g/h));
+        // to the power
+        console.log("the value of g ** h is " + (g ** h));  
+        console.log(g++); // increments by 1 after printing
+        console.log(++g); //increments by 1 before printing
+        var a = "this is a string bariable";
+        var b = `${a} is a tempo `;
+        console.log(b);
+        var length = a.length; // prints length use \n for new line
+
+
+        var position = a.indexOf('is');
+        console.log(position);
+        position = a.lastIndexOf('is');
+        console.log(position);
+
+        var substr = a.slice(1,5);
+        console.log(substr);
+         
+        var replaced = a.replace('string','simran');
+        console.log(replaced);
+        console.log(replaced.toUpperCase());
+        console.log(replaced.toLowerCase());
+
+        var whitespaces = "     this      is  widespaced        ";
+        console.log(whitespaces.trim());
+
+        var pos = a.charAt(2);
+        console.log(pos);
+        
+        let s = 34;
+        {
+            let s = 32;
+        }
+        const e = 10 // this cant be changed
+        if (s == 34) {
+                console.log("if success");
+            
+        }
+        else if (s == 32) {
+            console.log("elif succes");
+        } else {
+            console.log("else succses");
+        }
+        switch (s) {
+            case 34:
+                
+                break;
+        
+            default:
+                break;
+        }
+        let myvar = 1;
+        let myvar2 = "string";
+        let myvar3 = false;
+        let myvar4 = null;
+        let myvar5 = undefined;
+
+        let student = {
+            name : "ABC",
+            age : 12,
+            spouse : false,
+        }
+        console.log(student);
+        let names = [1,2,3,"harry",undefined];
+        // let names = new Array(1,2,3,"harry",undefined);  alt way
+        console.log(names[1]);
+        console.log(names.length);
+        
+        names.push("this is extra");
+        names = names.sort();
+        console.log(names);
+        let names1 = new Array(23);
+        console.log(names1);
+        function greet(name, greet = "is a hottie") {
+            console.log("HI "+name + greet);
+        }
+        greet("simran","comne here");
+        function sum(a , b , c) {
+            let d = a + b + c;
+            return d;
+        }
+        let so = sum(1,2,3);
+        console.log(so);
+    </script>
+</body>
+</html>

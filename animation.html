@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animayion</title>
+    <style>
+        .box{
+            height: 152px;
+            width: 152px;
+            background-color: goldenrod;
+            position: relative;
+            /* animation: animation-name animation-duration animation-timing function animation-delay animation-iteration count
+             animationp-fill mode
+         ; */
+         /* animation:simran 3s ease-in 2s 3 forwards; */
+        animation: simran 5s ease-in 0s 1 ;
+
+        }
+        .container{
+            background-color: green;
+        }
+    /* @keyframes simran {
+        from{
+            width: 152px;
+        }
+        to{
+            width:352px;
+        }
+        
+    } */
+    @keyframes simran {
+        0%{
+            top:0px;
+            left:0px
+
+        }
+        25%{
+            top:250px;
+            left:0px
+
+        }
+       
+        75%{
+            top:250px;
+            left:250px
+
+        }
+        100%{
+            top:0px;
+            left:250px
+
+        }
+        
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+    
+</body>
+</html>

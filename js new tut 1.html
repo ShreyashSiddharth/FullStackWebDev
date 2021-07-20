@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeout tutorial</title>
+</head>
+<body>
+    <div class="container">
+        <h1>sam[ple heading</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste animi magni et repudiandae nostrum eveniet. Commodi sed cum mollitia amet quod a impedit aut cumque laborum minima, maxime, nesciunt omnis beatae!
+        </p>
+    </div>
+    <script>
+        console.log("check");
+        function greet(name,byetext) {
+            console.log("hello " + name + " "+ byetext);
+        }
+        let timeout =  setTimeout(greet,5000, "shreyash","bye");
+        clearTimeout(timeout);
+
+        setTimeout(greet,5000, "shreyash","bye");
+
+       setInterval(greet,5000, "naini","mahi");
+       intervalid = setInterval(greet,5000, "naini","mahi");
+       clearInterval(intervalid);
+       </script>
+</body>
+</html>

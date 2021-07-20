@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS tut listerns</title>
+    <style>
+        #btn{
+            padding: 10px 32px;
+            background-color: blue;
+            border: 2px solid black;
+            color: white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>listerner tutorial</h1>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illo hic illum error, atque nostrum dicta non ex dolores quasi ab labore quidem voluptatibus nesciunt repudiandae quos ad. Facilis cupiditate ducimus ratione sapiente, provident doloribus dolores, harum eius dolorem, error perspiciatis dolore reiciendis.
+    </p>
+    <button id="btn" onclick="toggle()">show/hide</button>
+</div>
+<script>
+    let para = document.getElementById('para');
+    para.addEventListener('mouseover', function run(){
+        alert('mose inside')
+    });
+    para.addEventListener('mouseout', function run(){
+        alert('mose outside')
+    });
+    function toggle() {
+       let para = document.getElementById('para');
+        if(para.style.display != 'none'){
+            para.style.display = 'none';
+        }
+        else{
+            para.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>

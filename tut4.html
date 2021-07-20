@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- descibes charecterset -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for veiwing in every device -->
+    <meta name="description" content="this is description">
+    <!-- site description for SEO -->
+    <meta name="keywords" content="faceboook,fb,facbook,fb.com,fsbook">
+    <!-- site keywords for seo -->
+    <meta name="robots" content="INDEX,FOLLOW">
+    <!-- for search engines to crawl sites -->
+    <title>Headings Parahraphs and emmet</title>
+ <link rel="stylesheet" href="first.css">
+ <!-- for linikng css -->
+ <script src="first.js"></script>
+ <!-- for linking javascipt  -->
+</head>
+<body>
+    <!-- basic body coding -->
+    <h1>shreyash</h1>
+    <h2>shreyash</h2>
+    <h3>shreyash</h3>
+    <h4>shreyash</h4>
+    <h5>shreyash</h5>
+    <h6>shreyash</h6>
+    <p>this is paragraph</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id sit et error labore corporis quis libero officiis, repellendus expedita quod aut? Expedita, dolores ipsum quas unde rem laboriosam cum repudiandae incidunt voluptates nemo ut, inventore magni, necessitatibus quia <strong>this is strong</strong> Corrupti maiores rerum magni laudantium quo harum? Reiciendis, architecto! Aut ipsam ex quod, sed iure, atque vitae sequi, rem alias in ea! <em>this is emphasized</em>Sapiente in impedit cum commodi similique tenetur. Esse eius corporis hic nostrum accusantium aperiam error ipsa nam non fuga deleniti quidem minima quos recusandae molestiae suscipit, laborum quaerat. Velit corrupti, repudiandae aspernatur dolorem culpa mollitia. Dolore hic obcaecati aperiam!</p>
+    <p>first <br> this  is  new line</p>
+    <!-- hr for horizontal line -->
+    <!-- br for line break -->
+    <p>second</p>
+    <p>third </p>
+    <p>fourth</p>
+
+    <hr>
+
+    <!-- embeding links and images -->
+    a
+
+    <h1>links and images</h1>
+    <a href="https://google.com"target = "_blank">Google</a>
+    <!-- target opens site in a new tab -->
+    <a href="https://facebook.com">facebook</a>
+    <a href="https://twitter.com">twitter</a>
+    <a href="https://instagram.com">instagram</a>
+    <!-- linikg with local files -->
+    <a href="/linksandimages.html">linksandimages</a>
+
+
+
+    <!-- working with images -->
+    <img src="a.jpg" alt="error loading image">
+    <!-- error  shown as a.jpg doesnt exist -->
+    <img src="https://source.unsplash.com/user/erondu/700x900" alt="remotely unavailable">
+
+    <hr>
+    <!-- lists and tables -->
+    <h1>lists and tables</h1>
+
+    <h2>lists</h2>
+
+    <ul>
+        <li>this is first item of unorderd list</li>
+        <li>this is second item of unorderd list</li>
+        <li>
+            <ul>
+                <li>nest 1</li>
+                <li>nest 2</li>
+                <li>nest 3</li>
+            </ul>
+
+        </li>
+        <li>this is third item of unorderd list</li>
+    </ul>
+    <ol>
+        <!-- use type attribute to customize the ordering type -->
+        <li>this is first item of orderd list</li>
+        
+            <ol>
+                <li>orderd nest 1</li>
+                <li>orderd nest 2</li>
+                <li>orderd nest 3</li>
+            </ol>
+        
+        <li>this is second item of orderd list</li>
+        <li>this is third item of orderd list</li>
+    </ol>
+
+    <h2>table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>class </th>
+                <th>section</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>shreyas</td>
+                <td> IX</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>ayush</td>
+                <td> IX</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>prince</td>
+                <td> IX</td>
+                <td>F</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- forms and input tags  -->
+    <h2>Forms</h2>
+    <form action="backend.php">
+        <div><label for="name">Name</label></div>
+        <div> <input type="text" name="myname" id="name">   </div>
+        <div> class: <input type="text" name="myclass">  </div>
+        <div> section: <input type="text" name="mysection">    
+        </div>
+        <div>email : <input type="email" name="myemail" ></div>
+        <div>DOB : <input type="date" name="mydate" id=""></div>
+        <div>score : <input type="number" name="myscore" id=""></div>
+        <div>are you eligible : <input type="checkbox" name="myeligilbe" id=""checked></div> 
+        <!-- for checked by default checkbox  is checked -->
+        <div>gender: male <input type="radio" name="mygender" id=""> female <input type="radio" name="mygender" id=""></div>
+        <div>write about yourself: <br><textarea name="mytxt" id="" cols="30" rows="10"></textarea></div>
+        <div><label for="car">Car </label></div>
+        <div><select name="mycar" id="car">
+            <option value="wagn">Wagonr</option>
+            <option value="swift" selected>Swift</option>
+            <!-- auto selects swift -->
+
+        </select></div>
+        <div><input type="submit" value="submit"> <input type="reset" value="reset"></div>
+      
+           
+          
+       
+    </form>
+    <hr>
+    <h2>inline and block elements</h2>
+    <span>THIS IS INLINE</span> <span>this is also inline</span>
+    <p>this is block</p> <p>thiws is also a block element</p>
+
+    <hr>
+
+    <h2>Ids and classees</h2>
+    <div id="mydiv" class="RedBG"> this is main</div>
+    <span class="RedBG"></span>
+    <!-- . for class and # for id through emmet  -->
+    <span id="spanID"></span>
+    <div class="blackbackground"></div>
+    <!-- emet takes div as default  -->
+    <!-- you can ad multiple classes seprated by dots  -->
+ <div class="1 2 3 4"></div>
+<hr>
+
+<h2>html entities</h2>
+ 
+
+<div class="container">
+    this is trial
+</div>
+<div class="container">
+    this is a paragraph &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with spaces <br>
+    paragraph is written like &lt;p&gt;<br>
+    pound is written like &pound;<br>
+    copyright is written as &copy;<br>
+    this is written like &sect;<br>
+    thi is written like &Egrave; <br>
+    empty char &#8203;
+</div>
+<hr>
+<h2>adding inline css</h2>
+<p style="color: red;background-color: yellow;">this has inline css used </p>
+
+</body>
+</html>
